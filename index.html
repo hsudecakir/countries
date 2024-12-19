@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3ed2e8cef0.js" crossorigin="anonymous"></script>
+  <title>Countries</title>
+  <link rel="stylesheet" href="assets/css/countries.css">
+  <script src="assets/js/countries.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <div class="header__wrapper">
+      <div class="logo">
+        <h1>Where in the world?</h1>
+      </div>
+      <div class="mode-switch" id="modeSwitchBtn">
+        <i class="fa-regular fa-moon"></i>
+        <p>Dark Mode</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form id="searchForm">
+      <div class="search-input">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" name="title" placeholder="Search for a country…" id="searchInput">
+      </div>
+      <div class="region" id="region">
+        <p id="selectedRegion">Filter by Region <i class="fa-solid fa-angle-down"></i></p>
+        <div class="region-options" id="regionOptions">
+          <p data-region="Africa">Africa</p>
+          <p data-region="Americas">America</p>
+          <p data-region="Asia">Asia</p>
+          <p data-region="Europe">Europe</p>
+          <p data-region="Oceania">Oceania</p>
+        </div>
+      </div>
+    </form>
+    <div class="countries-list" id="countriesList">
+    </div>
+  </div>
+  <div class="detail-container">
+  </div>
+</body>
+</html>
